@@ -8,7 +8,7 @@
 
                   type nat hook prerouting priority -100;
 
-                  ip addr <внешний ip адрес> <tcp/udp> dport <внешний порт> dnat to <адрес сервера>:<порт сервера>
+                  ip daddr <внешний ip адрес> <tcp/udp> dport <внешний порт> dnat to <адрес сервера>:<порт сервера>
 
             }
 
