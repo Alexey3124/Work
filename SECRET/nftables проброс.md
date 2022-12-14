@@ -2,7 +2,7 @@
 + Заходим в конфигурационный файл /etc/nftables.conf
 + Дальше в самом низу файла прописываем следующее:
 
-table inet <имя таблицы> {
+table inet nat {
 
       chain prerouting {
 
