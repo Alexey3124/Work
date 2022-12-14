@@ -8,7 +8,7 @@ table inet <имя таблицы> {
 
             type nat hook prerouting priority -100;
 
-            ip addr ***<внешний ip адрес>*** ***<tcp/udp>*** dport ***<внешний порт>*** dnat to ***<адрес сервера>***:***<порт сервера>***
+            ip addr <внешний ip адрес> <tcp/udp> dport <внешний порт> dnat to <адрес сервера>:<порт сервера>
 
       }
 
@@ -16,7 +16,7 @@ table inet <имя таблицы> {
  
             type nat hook postrouting priority 100;
   
-            ip daddr ***<адрес сервера>*** masquerade
+            ip daddr <адрес сервера> masquerade
 
       }
 
